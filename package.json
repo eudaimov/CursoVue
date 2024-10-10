@@ -3,9 +3,11 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://eudaimov.github.io/CursoVue/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "deploy": "gh-pages -d public ",
     "preview": "vite preview"
   },
   "dependencies": {
