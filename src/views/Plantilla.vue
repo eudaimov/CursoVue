@@ -31,6 +31,12 @@ const codigo5 = "span :id=\"nameid\">"
   <p class="codigo" v-text="codigo5"></p>
 
   <h2>Vinculación múltiple:</h2>
+
+  <h2>Usando Expresiones Javascript</h2>
+  <section>
+    <p>Dentro del doble mostacho admite todo tipo de expresiones Javascript es como si estuvieramos dentro de un script
+    </p>
+  </section>
 </template>
 
 <style scoped>

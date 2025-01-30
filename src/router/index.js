@@ -3,6 +3,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 export const rutas = [
     'Home',
     'Plantilla',
+    'VinculacionClass&Style'
 ];
 
 const rutasDinamicas = {};
