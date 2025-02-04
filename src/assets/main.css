@@ -1,4 +1,6 @@
 
+@import "tailwindcss";
+
 *{
   box-sizing: border-box;
   padding: 0;
@@ -27,12 +29,27 @@ p, li{
 ul,ol{
   margin-top:1rem;
   margin-left: 1rem;
-  font-style: italic;
   font-weight: lighter;
 }
 .code{
   background-color: rgb(47, 44, 44);
-  padding: 0.5rem 1rem;
-  margin:0;
-  /*font-family: "Courier New", monospace;*/
+  padding: 1rem 1rem;
+  margin:0.5rem 0;
+  font-family: "Courier New", monospace;
+}
+h1{
+  font-weight: bold;
+  font-size: 1.7rem;
+  text-decoration: underline;
+  margin-bottom: 1.5rem;
+}
+h2{
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+ol li{
+  list-style: decimal;
+}
+ul li{
+  list-style: disc;
 }

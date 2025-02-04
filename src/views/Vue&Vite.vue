@@ -26,17 +26,25 @@
       <p class="code">
         import './style.css'</p>
       <p>Para bootstrap buscamos el cdn y la colocamos en el index.html</p>
-      <h3>Para TailwindCSS</h3>
-      <p>Utilizamos el siguiente comando</p>
-      <p class="code">npm install tailwindcss @tailwindcss/vite</p>
-      <p>Añadimos al archivo de configuracion vite.config.js lo siguiente:</p>
-      <p>import { defineConfig } from 'vite'</p>
-      <p>import tailwindcss from '@tailwindcss/vite'</p>
-      <p>export default defineConfig({</p>
-      <p>&emsp;plugins: [</p>
-      <p>&emsp;&emsp;tailwindcss(),</p>
-      <p>&emsp;],</p>
-      <p>})</p>
+  <h2>Para TailwindCSS (v.4)</h2>
+      <ol>
+        <li>
+        Utilizamos el siguiente comando
+        <p class="code">npm install tailwindcss @tailwindcss/vite</p>
+        </li>
+        <li>Añadimos al archivo de configuraci2n vite.config.js lo siguiente:
+          <p class="code">import { defineConfig } from 'vite'<br>
+          import tailwindcss from '@tailwindcss/vite'<br>
+          export default defineConfig({<br>
+          &emsp;plugins: [<br>
+          &emsp;&emsp;tailwindcss(),<br>
+          &emsp;],<br>
+          })</p>
+        </li>
+        <li> Y en nuestro archivo style.css o main.css añadimos:
+        <p class="code">@import "tailwindcss";</p>
+        </li>
+      </ol>
 
       <p>Y en nuestro archivo style.css:</p>
 
@@ -55,9 +63,7 @@
           <br>
           export default defineConfig({<br>
           plugins: [vue()],<br>
-          base: import.meta.env.MODE === 'production'<br>
-          ? '/&lt;nombre-de-tu-repositorio>/' // Reemplaza con el nombre de tu repositorio<br>
-          : '/',<br>
+          base: '/CursoVue/',//nombre del repositorio<br>
           });</p>
         <li>Construcción y publicación mediante el comando:</li>
         <p class="code">npm run deploy</p>

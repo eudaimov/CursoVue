@@ -3,16 +3,16 @@ import { fileURLToPath, URL } from 'node:url'
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import vueDevTools from 'vite-plugin-vue-devtools'
+import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [
     vue(),
     vueDevTools(),
+    tailwindcss(),
   ],
-  base: import.meta.env.MODE === 'production'
-    ? '/<nombre-de-tu-repositorio>/' // Reemplaza con el nombre de tu repositorio
-    : '/',
+  base: '/CursoVue/',
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
