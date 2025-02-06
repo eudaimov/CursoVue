@@ -7,7 +7,8 @@ export const rutas = [
     'InstalacionesNecesarias',
     'JavaScript',
     'Introduccion',
-    'Vue&Vite'
+    'VueviteView',
+    'CreacionTest',
 ];
 
 const rutasDinamicas = {};
@@ -22,9 +23,6 @@ const vistas = [
         component: () => rutasDinamicas[key]
     }))
 ];
-
-console.info(vistas);
-
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
     routes: vistas
