@@ -3,11 +3,9 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://eudaimov.github.io/CursoVue/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "deploy": "gh-pages -d public ",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -16,7 +14,6 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.1.4",
-    "gh-pages": "^6.1.1",
     "vite": "^5.4.8"
   }
 }
